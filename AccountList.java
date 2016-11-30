@@ -1,12 +1,19 @@
 package RAS;
+
+import java.sql.*;
 /**AccountList class: <BR>
  *Represents the collection of multiple Account objects.
  *@author Ahmed B. Qureshi
  *@version 1.0
  */
-public class AccountList{
 
-	private Account[] list;
+public class AccountList{
+	
+	public Statement myStat;
+	public ResultSet myRs;
+	public int exc;
+
+	private Account[]list;
 
 	/**AccountList default constructor: <BR>
 	 *Represents the default constructor which automatically instantiates 
@@ -24,14 +31,14 @@ public class AccountList{
 	 *@return account, pin entered matches a pin in an account
 	 * from the account list, and display the designated interface for position.
 	 */
-	public Account Login(String Pin){}
+//	public Account Login(String Pin){}
 
 	/**Logout method: <BR>
 	 *@author Jonathan Gomes
 	 *@version 1.0
 	 *@return boolean, logs out of account.
 	 */
-	public boolean Logout(){}	
+//	public boolean Logout(){}	
 
 	/**
 	 *EditEmployee method: <BR>
@@ -49,8 +56,8 @@ public class AccountList{
 	 *@return Account, the Account object representing the updated Account
 	 */
 	public Account EditEmployee(int ID, String Pin, String Name, String Position, 
-		double Hours, double Sales, double PayRate){}
-
+		double Hours, double Sales, double PayRate){
+	
 	/**
 	 *RemoveEmployee method: <BR>
 	 *Prompts the user to ask which employee to remove, and then 
@@ -71,7 +78,21 @@ public class AccountList{
 	 *@param ID, an int value
 	 *@return Account, simply returns the Account if changes are made
 	 */
-	public Account AddEmployee(int ID){}
+	public Account AddEmployee(int ID) {
+		
+		try{
+			
+			myStat = conn.createStatement();// Create Statement
+			myRs = my.Stat.executeUpdate("INSERT INTO Account (Table_Num,Acc_Name,Item_List,Order_Total) VALUES "
+					+ "("+tableNum+",'"+accName+"','"+order+"',23.23);");
+					
+		}
+			catch(Exception exc) {
+				exc.printStackTrace();
+			}
+	}
+	
+	}
 	
 	/**
 	 *searchAccount method: <BR>

@@ -1,6 +1,5 @@
 package RAS;
 
-
 /**
  *Account class: <BR>
  *Represents the Account class.
@@ -41,8 +40,8 @@ public class Account{
 	 *@param newPin, a String representing the new pin
 	 *@return boolean, true if successful and false otherwise
 	 */
-	public boolean setPin(String newPin){}
-		this.Pin = Pin;
+	public boolean setPin(String newPin){
+		return false;}
 		
 	/**
 	 *getPin method: <BR>
@@ -52,19 +51,8 @@ public class Account{
 	 *@return String, not empty if there are data stored
 	 *for the multiple account instance variables. 
 	 */
-	public String getPin(){}
-		return Pin;
-		
-
-		
-		
-		
-		
-		
-		
-		
-		
-		
+	public String getPin(){
+		return Pin;}
 		
 	/**
 	 *setName method: <BR>
@@ -75,7 +63,8 @@ public class Account{
 	 *of an account.
 	 *@return boolean, true if successful and false otherwise
 	 */
-//	public boolean setName(String newName){}
+	public boolean setName(String newName){
+		return false;}
 
 	/**
 	 *getName method: <BR>
@@ -85,7 +74,8 @@ public class Account{
 	 *@return String, not empty if there are data stored 
 	 *for the multiple account instance variables.
 	 */
-//	public String getName(){}
+	public String getName(){
+		return Name;}
 
 	/**
 	 *setPosition method: <BR>
@@ -96,7 +86,8 @@ public class Account{
 	 *new position of an account.
 	 *@return boolean, true if successful and false otherwise
 	 */
-//	public boolean setPosition(String newPosition){}
+	public boolean setPosition(String newPosition){
+		return false;}
 	
 	/**
 	 *getPosition method: <BR>
@@ -106,7 +97,8 @@ public class Account{
 	 *@return String, not empty if there is data stored 
 	 *for the multiple account instance variables.	 
 	 */
-//	public String getPosition(){}
+	public String getPosition(){
+		return Position;}
 
 	/**
 	 *setID method: <BR>
@@ -116,7 +108,8 @@ public class Account{
 	 *@param newID, an integer value
 	 *@return boolean, true if newID is a unique int value greater than 0
 	 */
-//	public boolean setID(String newID){}
+	public boolean setID(String newID){
+		return false;}
 	
 	/**
 	 *getID method: <BR>
@@ -126,7 +119,8 @@ public class Account{
 	 *@return String, the int value representing the ID instance variable 
  *of the account. 	 
 	 */
-//	public String getID(){}
+	public String getID(){
+		return null;}
 	
 	/**
 	 *setHours method: <BR>
@@ -137,7 +131,8 @@ public class Account{
 	 *@return boolean, true if newHours is a double value which is at least 
  *equal to 0.0.
 	 */
-//	public boolean setHours(double newHours){}
+	public boolean setHours(double newHours){
+		return false;}
 	
 	/**
 	 *getHours method: <BR>
@@ -147,7 +142,8 @@ public class Account{
 	 *@return double, the double value representing the hours
 	 *instance variable of the account.
 	 */
-//	public double getHours(){}
+	public double getHours(){
+		return Hours;}
 	
 	/**
 	 *setSales method: <BR>
@@ -157,7 +153,8 @@ public class Account{
 	 *@param newSales, a double representing sales in dollars
 	 *@return boolean, true if successful and false otherwise
 	 */
-//	public boolean setSales(double newSales){}
+	public boolean setSales(double newSales){
+		return false;}
 	
 	/**
 	 *getSales method: <BR>
@@ -166,7 +163,8 @@ public class Account{
 	 *@version 1.0
 	 *@return double, least amount of sales returned is 0
 	 */
-//	public double getSales(){}
+	public double getSales(){
+		return Sales;}
 	
 	/**
 	 *setPayRate method: <BR>
@@ -178,7 +176,8 @@ public class Account{
 	 *rate is minimum wage
 	 *@return boolean, true if successful and false otherwise
 	 */
-//	public boolean setPayRate(double newPayRate){}
+	public boolean setPayRate(double newPayRate){
+		return false;}
 	
 	/**
 	 *getPayRate method: <BR>
@@ -188,7 +187,8 @@ public class Account{
 	 *@return double, least amount of hours returned is
 	 *minimum wage
 	 */
-//	public double getPayRate(){}
+	public double getPayRate(){
+		return PayRate;}
 	
 	/**
 	 *toString method: <BR>
@@ -199,8 +199,8 @@ public class Account{
 	 *@return String, the String value representing all instance variable
 	 *information of the account
 	 */
-//	public String toString(){}	
-	}
-}
+	public String toString(){
+		return null;}	
 
+	}
 

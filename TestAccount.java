@@ -6,15 +6,14 @@ public class TestAccount {
 	private static Scanner input;
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		input = new Scanner(System.in);
 		
 		System.out.println("Enter Employee ID");
 		int num = input.nextInt();
-//		System.out.println("Enter Employee Name");
-//		String name = input.next();
 		
-		JDBC_AccountList jd = new JDBC_AccountList();
+		JDBCAccountList jd = new JDBCAccountList();
+		
 //		jd.SendOrder(num, name, items);
 		
 		
@@ -26,10 +25,7 @@ public class TestAccount {
 		System.out.println(it.getItems());
 		System.out.println("Enter an integer");
 		int num1 = input.nextInt();
-		System.out.println(it.selectItem(num1).toString());*/
-		
-		
-		
+		System.out.println(it.selectItem(num1).toString());*/		
 
 	}
 

@@ -8,7 +8,7 @@ package RAS;
  */
 public class JDBCAccountList{
 	
-	private Account[] list;
+	private Account[]list;
 	
 	/**JDBCAccountList default constructor: <BR>
 	 *@author Jonathan Gomes
